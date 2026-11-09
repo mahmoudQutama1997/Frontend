@@ -7,7 +7,10 @@ const newRequestKey=()=>globalThis.crypto?.randomUUID?.()||`waselni-${Date.now()
 import {dict} from './i18n'
 const money=v=>`${Number(v||0).toFixed(2)} ₪`
 const GEOCODING_BASE=(import.meta.env.VITE_GEOCODING_URL||'https://nominatim.openstreetmap.org/reverse').trim()
-const MAP_TILE_URL=(import.meta.env.VITE_MAP_TILE_URL||'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').trim()
+const MAP_TILE_URL = (
+  import.meta.env.VITE_MAP_TILE_URL ||
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+).trim();
 const MAP_ATTRIBUTION=import.meta.env.VITE_MAP_ATTRIBUTION||'&copy; OpenStreetMap &copy; CARTO'
 const statusLabel=(t,s)=>t[s]||s
 const APP_ROLE=(import.meta.env.VITE_WASELNI_APP_ROLE||'all').toLowerCase()

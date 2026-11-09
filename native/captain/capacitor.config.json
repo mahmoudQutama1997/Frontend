@@ -1,0 +1,6 @@
+{
+  "appId": "com.waselni.captain",
+  "appName": "Waselni Captain",
+  "webDir": "../../dist/captain",
+  "bundledWebRuntime": false
+}

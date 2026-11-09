@@ -1,0 +1,6 @@
+{
+  "appId": "com.waselni.merchant",
+  "appName": "Waselni Merchant",
+  "webDir": "../../dist/merchant",
+  "bundledWebRuntime": false
+}

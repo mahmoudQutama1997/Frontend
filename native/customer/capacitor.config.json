@@ -1,0 +1,6 @@
+{
+  "appId": "com.waselni.customer",
+  "appName": "Waselni Customer",
+  "webDir": "../../dist/customer",
+  "bundledWebRuntime": false
+}
